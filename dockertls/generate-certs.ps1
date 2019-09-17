@@ -122,7 +122,7 @@ function createMachineConfig ($machineName, $machineHome, $machinePath, $machine
         "SwarmMaster": false,
         "SwarmHost": "",
         "SwarmDiscovery": "",
-        "EnginePort": 2376,
+        "EnginePort": 2375,
         "SSHKey": ""
     },
     "DriverName": "generic",
