@@ -6,7 +6,7 @@ ENV VERSION 2.5.5
 
 ENV LIBRESSLPATH C:\libressl
 
-WORKDIR "C:\\temp"
+USER ContainerAdministrator
 
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 ; `
   Invoke-WebRequest "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-$Env:VERSION-windows.zip" -OutFile $Env:Temp\libressl.zip -UseBasicParsing ; `
